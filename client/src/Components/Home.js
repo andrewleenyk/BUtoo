@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+
 import { useEffect, useState } from 'react';
 import axios from "axios";
 
@@ -11,9 +11,18 @@ const Home = () => {
 
     useEffect(() => {
         console.log('getting responses');
+        const getResponses = async () => {
+            const resp = await axios.get(API_URL);
+            console.log(resp.data.records);
+            setResponse(resp.data.records);
+        }
 
+        getResponses();
 
     },[])
+    return (
+        <h1>Hello</h1>
+    )
 }
 
 export default Home;
