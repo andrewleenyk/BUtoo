@@ -1,4 +1,5 @@
 import { useEffect } from "react";
+import { useEffect, useState } from 'react';
 import axios from "axios";
 
 const API_KEY = 'keyN5KW3EITtcAGls'
@@ -10,5 +11,9 @@ const Home = () => {
 
     useEffect(() => {
         console.log('getting responses');
-    })
+
+
+    },[])
 }
+
+export default Home;
