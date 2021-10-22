@@ -8,7 +8,7 @@ function App() {
       <nav>
         <div className="home-icon">
 
-          <Link to='/' className="title">
+          <Link to="/" className="title" exact>
             <h1>BU Speaks</h1>
             <h5>Boston University</h5>
           </Link>
@@ -18,13 +18,24 @@ function App() {
           <a className="nav-link">Why</a>
           <a className="nav-link">Survivor Support</a>
           <a className="nav-link">Prevention</a>
-          <a className="nav-link">Share Your Story</a>
+          <Link to="/share-your-story">
+            <a className="nav-link">Share Your Story</a>
+          </Link>
           <a className="nav-link">Sign the Petition</a>
 
         </div>
       </nav>
       <hr></hr>
-      <Home />
+      <section>
+        <article>
+        <Route path="/">
+          <Home />
+        </Route>
+        </article>
+        <article className='resources'>
+          <h1>Resources</h1>
+        </article>
+      </section>
     </div>
   );
 }
