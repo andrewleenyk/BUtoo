@@ -1,0 +1,28 @@
+nav {
+  display: flex;
+}
+
+.home-icon .nav-links {
+  flex:1;
+}
+
+.home-icon {
+  margin-right: 260px; right:0;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+}
+
+.nav-link {
+  margin: 0 1.5vw 0 1.5vw;
+}
+h1 {
+  margin: 20px 0px 5px 15px;
+  font-size: xx-large;
+}
+
+h5 {
+  margin: 0px 0px 15px 15px;
+}

@@ -1,5 +1,5 @@
 import Home from './Components/Home.js'
-
+import './App.css'
 
 function App() {
   return (
@@ -10,11 +10,11 @@ function App() {
           <h5>Boston University</h5>
         </div>
         <div className="nav-links">
-          <a>Why</a>
-          <a>Survivor Support</a>
-          <a>Prevention</a>
-          <a>Share Your Story</a>
-          <a>Sign the Petition</a>
+          <a className="nav-link">Why</a>
+          <a className="nav-link">Survivor Support</a>
+          <a className="nav-link">Prevention</a>
+          <a className="nav-link">Share Your Story</a>
+          <a className="nav-link">Sign the Petition</a>
         </div>
       </nav>
       <hr></hr>
