@@ -1,6 +1,5 @@
-# BUSpeaks
+# Title: BUSpeaks
 
-Hear Our Stories
 A place for people to discuss sexual assault stories anonymously
 
 BUAnonymous/BU Speaks
