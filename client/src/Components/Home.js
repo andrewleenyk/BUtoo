@@ -7,21 +7,28 @@ const API_URL = `https://api.airtable.com/v0/appix77dwjzsTAHgi/Table%201?api_key
 
 const Home = () => {
 
-    const [response, setResponse] = useState([]);
+    const [responses, setResponses] = useState([]);
 
     useEffect(() => {
         console.log('getting responses');
         const getResponses = async () => {
             const resp = await axios.get(API_URL);
             console.log(resp.data.records);
-            setResponse(resp.data.records);
+            setResponses(resp.data.records);
         }
 
         getResponses();
 
     },[])
     return (
-        <h1>Hello</h1>
+        responses.map((response) => (
+            <div className='resp'>
+                <p>{response.fields.response}</p>
+                <h6>{response.fields.date}</h6>
+            </div>
+
+        ))
+
     )
 }
 
