@@ -15,11 +15,16 @@ MVP:
 - Being able to render all responses in the home page 
 - Submit form in the Share link
 - Sign the petition and render all signees
+
 PMVP: 
 - Form in survivor support or prevention for people to submit their own advice/support 
 - Working video in page discussing the issue
-- Display a graph of number of responses/signed petitions.
-- Image dynamically appearing in homepage before stories.
+- Display a graph of number of responses/signed petitions
+- Image dynamically appearing in homepage before stories
+- Making it optional to be sign the petition anonymously or not
+- having an apporoval attribute in each story response to await manual approval
+
+
 Project Schedule: 
 - Friday: Have proposal finished, repo and react app created.
 - Weekend: Homepage, Share components, and air table created.
@@ -31,6 +36,8 @@ Timeframes:
 - Have a working homepage that renders the stories and link to submit stories by Tuesday.
 - Having the petition page done by Wednesday.
 - The rest of the MVP finished and styles on Thursday at noon.
+
+
 SWOT Analysis:
 - Strengths: Handling data, axis api calls
 - Weaknesses: rendering the data, and Route/Links
