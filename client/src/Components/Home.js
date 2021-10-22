@@ -21,13 +21,14 @@ const Home = () => {
 
     },[])
     return (
-        responses.map((response) => (
+        <div className="responses-div">
+            {responses.map((response) => (
             <div className='resp'>
                 <p>{response.fields.response}</p>
                 <h6>{response.fields.date}</h6>
             </div>
-
-        ))
+        ))}
+        </div>
 
     )
 }
