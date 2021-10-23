@@ -43,17 +43,16 @@ const Petition = () => {
     }
     return (
         <div>
-        {signatures.map((signature) => (
-            <a>{signature.fields.signature}</a>
-        ))}
             <form onSubmit={handleSubmit}>
                 <label htmlFor='input-signature'>Sig :</label>
                 <input type="text" id="input-signature" onChange={(ev) => setSignature(ev.target.value)}/>
                 <input type="submit"/>
             </form>
+        {signatures.map((signature) => (
+            <a className="each-signature">{signature.fields.signature}</a>
+        ))}
 
         </div>
-
     )
 }
 
