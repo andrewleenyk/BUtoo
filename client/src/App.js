@@ -6,6 +6,8 @@ import { compose } from '@mui/system';
 import axios from "axios";
 import { useEffect, useState } from 'react';
 import Petition from './Components/Petition.js'
+import Prevention from './Components/Prevention.js'
+
 
 const API_KEY = 'keyN5KW3EITtcAGls'
 const API_URL = `https://api.airtable.com/v0/appix77dwjzsTAHgi/Table%201?api_key=${API_KEY}`
@@ -28,6 +30,8 @@ function App() {
 
   },[toggleFetch])
 
+  
+
   return (
     <div>
       <nav>
@@ -42,7 +46,10 @@ function App() {
         <div className="nav-links">
           <a className="nav-link">Why</a>
           <a className="nav-link">Survivor Support</a>
-          <a className="nav-link">Prevention</a>
+
+          <Link to="/prevention">
+            <a className="nav-link">Prevention</a>
+          </Link>
           <Link to="/share-your-story">
             <a className="nav-link">Share Your Story</a>
           </Link>
@@ -61,6 +68,10 @@ function App() {
           />
         </Route>
 
+        <Route path="/prevention">
+          <Prevention />
+        </Route>
+
         <Route path="/share-your-story">
           <Share 
             toggleFetch={toggleFetch}
@@ -70,7 +81,8 @@ function App() {
 
         <Route path="/sign-the-petition">
           <Petition />
-        </Route>
+        </Route>        
+        
         </article>
         <article className='resources'>
           <h1>Resources</h1>
