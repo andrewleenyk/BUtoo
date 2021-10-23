@@ -1,7 +1,6 @@
 
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import axios from "axios";
-
 
 const Share = ({toggleFetch, setToggleFetch}) => {
     const API_KEY = 'keyN5KW3EITtcAGls'
@@ -32,7 +31,7 @@ const Share = ({toggleFetch, setToggleFetch}) => {
             <form onSubmit={handleSubmit}>
                 <label htmlFor='input-date'>Date :</label>
                 <input type="text" id="input-date" onChange={(ev) => setDate(ev.target.value)}/>
-                <label htmlFor='input-story'>Story :</label>
+                <label htmlFor='input-story'>Title :</label>
                 <input type="text" id="input-story" onChange={(ev) => setStory(ev.target.value)}/>
                 <input type="submit"/>
             </form>
