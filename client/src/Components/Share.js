@@ -32,9 +32,9 @@ const Share = ({toggleFetch, setToggleFetch}) => {
     return (
         <div>
             <form onSubmit={handleSubmit}>
-                <label htmlFor='input-date'>Title :</label>
+                <label htmlFor='input-date'>Date :</label>
                 <input type="text" id="input-date" onChange={(ev) => setDate(ev.target.value)}/>
-                <label htmlFor='input-story'>Title :</label>
+                <label htmlFor='input-story'>Story :</label>
                 <input type="text" id="input-story" onChange={(ev) => setStory(ev.target.value)}/>
                 <input type="submit"/>
             </form>
