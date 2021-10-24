@@ -54,3 +54,13 @@ section{
 .each-response {
   border-style: solid;
 }
+
+#input-signature {
+  width: 300px;
+  display: block;
+}
+
+.form-container {
+  display: block;
+  max-width: 550px;
+}

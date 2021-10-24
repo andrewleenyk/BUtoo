@@ -3,6 +3,7 @@ import { Route, Link } from 'react-router-dom'
 import './App.css'
 import Share from './Components/Share.js'
 import { compose } from '@mui/system';
+
 import axios from "axios";
 import { useEffect, useState } from 'react';
 import Petition from './Components/Petition.js'
@@ -29,7 +30,6 @@ function App() {
       getResponses();
 
   },[toggleFetch])
-
   
 
   return (
@@ -47,9 +47,11 @@ function App() {
           <a className="nav-link">Why</a>
           <a className="nav-link">Survivor Support</a>
 
+
           <Link to="/prevention">
             <a className="nav-link">Prevention</a>
           </Link>
+          
           <Link to="/share-your-story">
             <a className="nav-link">Share Your Story</a>
           </Link>
