@@ -23,8 +23,24 @@ a {
 .nav-link {
   margin: 0 1.5vw 0 1.5vw;
   font-size: 1.25rem;
+  color: brown;
 }
+.nav-link {
 
+  background: linear-gradient(to right, rgb(231, 85, 85), rgb(231, 85, 85) 50%, brown 50%);
+  overflow: hidden;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 200% 100%;
+  background-position: 100%;
+  transition: background-position 275ms ease;
+
+}
+.nav-link:hover {
+  background-position: 0 100%;
+
+}
 .title {
   text-decoration: none;
   color:brown;
@@ -127,3 +143,4 @@ section{
 #story-form {
   display: block;
 }
+
