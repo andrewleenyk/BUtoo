@@ -16,18 +16,27 @@ const Share = ({toggleFetch, setToggleFetch}) => {
     const API_URL = `https://api.airtable.com/v0/appix77dwjzsTAHgi/Table%201?api_key=${API_KEY}`
 
 
-    const [date, setDate] = useState('');
+    //const [date, setDate] = useState('');
     const [story, setStory] = useState('');
     const [grade, setGrade] = useState('');
     const [submit, setSubmit] = useState(false);
 
+    const submitDate = () => {
+        let dateObj = new Date();
+        let date = `${dateObj.getUTCMonth() + 1}/${dateObj.getUTCDate()}/${dateObj.getUTCFullYear()}`;
+        return date;
+    }
+
     const handleSubmit = async (ev) => {
         ev.preventDefault();
+
+
+        console.log(submitDate())
         const newStory = {
             records: [
                 {
                     fields: {
-                        date,
+                        date:submitDate(),
                         story,
                         grade
                     }
@@ -43,29 +52,32 @@ const Share = ({toggleFetch, setToggleFetch}) => {
         <div>
             {submit ?
             <h1>thank you</h1> :
-            <form onSubmit={handleSubmit}>
+            <form onSubmit={handleSubmit} id="story-form">
             <div className="form-container">
+                <FormControl fullWidth id="input-grade">
+                    <InputLabel>Grade</InputLabel>
+                    <Select
+                    labelId="demo-simple-select-label"
+                    id="demo-simple-select"
+                    label="Garde"
+                    onChange={(ev) => setGrade(ev.target.value)}
+                    >
+                    <MenuItem value={"freshman"}>Freshman</MenuItem>
+                    <MenuItem value={"sophomore"}>Sophomore</MenuItem>
+                    <MenuItem value={"junior"}>Junior</MenuItem>
+                    <MenuItem value={"senior"}>Senior</MenuItem>
+                    <MenuItem value={"grad"}>Grad Student</MenuItem>
+                    </Select>
+                </FormControl>
 
-            <FormControl fullWidth>
-                <InputLabel>Grade</InputLabel>
-                <Select
-                labelId="demo-simple-select-label"
-                id="demo-simple-select"
-                label="Garde"
-                onChange={(ev) => setGrade(ev.target.value)}
-                >
-                <MenuItem value={"freshman"}>Freshman</MenuItem>
-                <MenuItem value={"sophomore"}>Sophomore</MenuItem>
-                <MenuItem value={"junior"}>Junior</MenuItem>
-                <MenuItem value={"senior"}>Senior</MenuItem>
-                <MenuItem value={"grad"}>Grad Student</MenuItem>
-                </Select>
-            </FormControl>
-                <TextField type="text" id="input-date" label="Date" onChange={(ev) => setDate(ev.target.value)}/>
+                {/*<TextField type="text" id="input-date" label="Date" onChange={(ev) => setDate(ev.target.value)}/>*/}
+
+
                 <TextField type="text" id="input-story" multiline
                 label="Story"
                 rows={12} onChange={(ev) => setStory(ev.target.value)} />
             </div>
+
                 <Button variant="outlined" type="submit">
                 Submit
                 </Button>
