@@ -27,7 +27,7 @@ a {
 }
 .nav-link {
 
-  background: linear-gradient(to right, rgb(231, 85, 85), rgb(231, 85, 85) 50%, brown 50%);
+  background: linear-gradient(to right, rgb(243, 112, 112), rgb(243, 112, 112) 50%, brown 50%);
   overflow: hidden;
   background-clip: text;
   -webkit-background-clip: text;
@@ -128,6 +128,10 @@ section{
 
 .each-response {
   border-style: solid;
+  border-width: 2px;
+  border-color: rgb(197, 204, 214);
+  margin: 25px 0px 25px 0px;
+  padding: 20px;
 }
 
 #input-signature {
