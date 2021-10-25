@@ -80,7 +80,7 @@ function App() {
 
         </div>
       </nav>
-      <hr></hr>
+      
       <section>
         <article className="home-responses-container">
         <Route path="/" exact>

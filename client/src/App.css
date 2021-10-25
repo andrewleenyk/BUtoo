@@ -13,6 +13,20 @@ a {
   margin-right: 35px;
 }
 
+nav {
+  position:fixed;
+  top: 0;
+  z-index: 1030;
+  background-color: white;
+  width:100%;
+  border-style: solid;
+  border-width: 2px;
+  border-color: transparent transparent gray transparent;
+}
+
+section {
+  margin-top: 120px;
+}
 .nav-links {
   display: flex;
   align-items: center;
@@ -123,7 +137,7 @@ section{
 .responses-div {
   margin: 40px 30px 0px 40px;
   overflow-wrap: break-word;
-  max-width: 450px;
+  max-width: 570px;
 }
 
 .each-response {
@@ -147,4 +161,3 @@ section{
 #story-form {
   display: block;
 }
-
