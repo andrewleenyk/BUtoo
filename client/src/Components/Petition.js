@@ -45,6 +45,7 @@ const Petition = () => {
     }
     return (
         <div>
+        <iframe src="https://giphy.com/embed/y6aGq7e5NnPr96E0ap" width="480" height="168" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
             <form onSubmit={handleSubmit}>
                 
                 <TextField type="text" id="input-signature" multiline
