@@ -38,8 +38,8 @@ function App() {
         <div className="home-icon">
 
           <Link to="/" className="title" exact>
-            <h1>BU Speaks</h1>
-            <h5>Boston University</h5>
+            <h1 id="main-title">BU Speaks</h1>
+            <h5 id="sub-title">Boston University</h5>
           </Link>
 
         </div>

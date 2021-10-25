@@ -14,25 +14,28 @@ a {
   display: flex;
   align-items: center;
   margin-right: 50px;
+  font-family: 'Lato', sans-serif;
 }
 
 .nav-link {
   margin: 0 1.5vw 0 1.5vw;
+  font-size: 1.25rem;
 }
 
 .title {
   text-decoration: none;
   color:brown;
+  font-family: 'Lato', sans-serif;
 }
 
-h1 {
-  margin: 20px 0px 5px 15px;
-  font-size: xx-large;
+#main-title {
+  margin: 20px 0px 0px 15px;
+  font-size: 3.3rem;
+}
+#sub-title {
+  margin: 0px 0px 15px 17px;
 }
 
-h5 {
-  margin: 0px 0px 15px 15px;
-}
 section{
   display: flex;
   justify-content: space-between;

@@ -3,7 +3,6 @@ import { useState, useEffect } from 'react';
 import axios from "axios";
 import Button from '@mui/material/Button';
 
-import Box from '@mui/material/Box';
 import TextField from '@mui/material/TextField';
 
 const Petition = () => {
@@ -47,11 +46,11 @@ const Petition = () => {
     return (
         <div>
             <form onSubmit={handleSubmit}>
-                <div className="form-container">
+                
                 <TextField type="text" id="input-signature" multiline
-                label="Story"
-                rows={12} onChange={(ev) => setSignature(ev.target.value)} />
-                </div>
+                label="Name"
+                onChange={(ev) => setSignature(ev.target.value)} />
+
                 <Button variant="outlined" type="submit">
                 Submit
                 </Button>
