@@ -2,6 +2,8 @@ import Home from './Components/Home.js'
 import { Route, Link } from 'react-router-dom'
 import './App.css'
 import Share from './Components/Share.js'
+import SurvivorSupport from './Components/SurvivorSupport.js'
+import Why from './Components/Why.js'
 import { compose } from '@mui/system';
 
 import axios from "axios";
@@ -54,9 +56,16 @@ function App() {
 
         </div>
         <div className="nav-links">
-          <a className="nav-link">Why</a>
-          <a className="nav-link">Survivor Support</a>
 
+
+
+          <Link to="/why">
+            <a className="nav-link">Why</a>
+          </Link>
+
+          <Link to="/survivor-support">
+            <a className="nav-link">Survivor Support</a>
+          </Link>
 
           <Link to="/prevention">
             <a className="nav-link">Prevention</a>
@@ -80,7 +89,14 @@ function App() {
           />
         </Route>
 
-        
+
+        <Route path="/why">
+          <Why />
+        </Route>
+
+        <Route path="/survivor-support">
+          <SurvivorSupport />
+        </Route>
 
         <Route path="/prevention">
           <Prevention />
