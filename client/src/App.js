@@ -80,6 +80,8 @@ function App() {
           />
         </Route>
 
+        
+
         <Route path="/prevention">
           <Prevention />
         </Route>

@@ -69,10 +69,7 @@ const Share = ({toggleFetch, setToggleFetch}) => {
                     <MenuItem value={"grad"}>Grad Student</MenuItem>
                     </Select>
                 </FormControl>
-
-                {/*<TextField type="text" id="input-date" label="Date" onChange={(ev) => setDate(ev.target.value)}/>*/}
-
-
+                
                 <TextField type="text" id="input-story" multiline
                 label="Story"
                 rows={12} onChange={(ev) => setStory(ev.target.value)} />
