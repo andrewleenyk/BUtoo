@@ -54,11 +54,11 @@ const Share = ({toggleFetch, setToggleFetch}) => {
             <h1>thank you</h1> :
             <form onSubmit={handleSubmit} id="story-form">
             <div className="form-container">
-                <FormControl fullWidth id="input-grade">
+                <FormControl id="input-grade">
                     <InputLabel>Grade</InputLabel>
                     <Select
-                    labelId="demo-simple-select-label"
-                    id="demo-simple-select"
+                    labelId="grade-select"
+                    id="grade-select"
                     label="Garde"
                     onChange={(ev) => setGrade(ev.target.value)}
                     >
@@ -69,12 +69,13 @@ const Share = ({toggleFetch, setToggleFetch}) => {
                     <MenuItem value={"grad"}>Grad Student</MenuItem>
                     </Select>
                 </FormControl>
-                
-                <TextField type="text" id="input-story" multiline
+
+                <FormControl id="input-story">
+                <TextField type="text" id="story-box" multiline
                 label="Story"
                 rows={12} onChange={(ev) => setStory(ev.target.value)} />
+                </FormControl>
             </div>
-
                 <Button variant="outlined" type="submit">
                 Submit
                 </Button>
