@@ -57,8 +57,6 @@ function App() {
         </div>
         <div className="nav-links">
 
-
-
           <Link to="/why">
             <a className="nav-link">Why</a>
           </Link>
@@ -79,10 +77,11 @@ function App() {
           </Link>
 
         </div>
+
       </nav>
-      
+
       <section>
-        <article className="home-responses-container">
+        <article className="home-responses-container" alt="hello">
         <Route path="/" exact>
           <Home 
             responses={responses}
