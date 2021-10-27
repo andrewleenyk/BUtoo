@@ -12,11 +12,10 @@ nav {
 a {
   text-decoration: none;
   color:white;
+  font-family:'Times New Roman', Times, serif;
 }
+a:hover { text-shadow: 0 0 5px #ffeeee; }
 
-section {
-
-}
 
 .nav-links {
   display: flex;
