@@ -1,8 +1,9 @@
 nav {
   display: flex;
   justify-content: space-between;
-  background-image: url("butoo.png");
+  background-image: url("BU-too.jpg");
   background-repeat: no-repeat;
+  background-position:bottom;
   background-size: cover;
   height:400px;
 }
@@ -33,7 +34,7 @@ section {
 }
 .nav-links {
   display: flex;
-  align-items: center;
+  vertical-align: text-top;
   margin-right: 50px;
   font-family: 'Lato', sans-serif;
 }
