@@ -40,18 +40,11 @@ function App() {
         <div className="home-icon">
 
           <Link to="/" className="title" exact>
-            <div id="main-title-container">
-              <h1 id="main-title">BU </h1>
-              <div className="animate-title-box">
-                <span>S</span>
-                <span>P</span>
-                <span>E</span>
-                <span>A</span>
-                <span>K</span>
-                <span>S</span>
-              </div>
+            <div id="main-title">
+              <h1 id="title">#BUtoo</h1>
+            
+            <h5 id="sub-title">Sexual assault happens at Boston University. <br/> Let's make our community safer.</h5>
             </div>
-            <h5 id="sub-title">Boston University</h5>
           </Link>
 
         </div>
