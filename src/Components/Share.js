@@ -19,6 +19,7 @@ const Share = ({toggleFetch, setToggleFetch}) => {
     //const [date, setDate] = useState('');
     const [story, setStory] = useState('');
     const [grade, setGrade] = useState('');
+    const [approved, setApproved] = useState(false);
     const [submit, setSubmit] = useState(false);
 
     const submitDate = () => {
@@ -38,7 +39,8 @@ const Share = ({toggleFetch, setToggleFetch}) => {
                     fields: {
                         date:submitDate(),
                         story,
-                        grade
+                        grade,
+                        approved
                     }
                 }
             ]

@@ -30,6 +30,7 @@ function App() {
       }
 
       getResponses();
+      console.log(responses)
 
   },[toggleFetch])
   
