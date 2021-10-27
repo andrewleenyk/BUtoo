@@ -52,18 +52,16 @@ function App() {
           </Link>
           
           <Link to="/share-your-story">
-            <a className="nav-link">Share Your Story</a>
+            <a className="nav-link">Share</a>
           </Link>
           <Link to="/sign-the-petition">
-            <a className="nav-link">Sign the Petition</a>
+            <a className="nav-link">Petition</a>
           </Link>
         </div>
         <div className="home-icon">
           <Link to="/" className="title" exact>
-            <div id="main-title">
               <h1 id="title">#BUtoo</h1>
               <h5 id="subtitle">Sexual assault happens at Boston University. <br/> Let's make our community safer.</h5>
-            </div>
           </Link>
         </div>
       </nav>
@@ -101,9 +99,6 @@ function App() {
           <Petition />
         </Route>        
         
-        </article>
-        <article className='resources'>
-          <h1>Resources</h1>
         </article>
       </section>
 
