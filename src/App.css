@@ -1,5 +1,5 @@
 nav {
-  display: flex;
+  display:block;
   justify-content: space-between;
   background-image: url("BU-too.jpg");
   background-repeat: no-repeat;
@@ -11,12 +11,7 @@ a {
   text-decoration: none;
   color:brown;
 }
-.home-icon .nav-links {
-  flex:1;
-}
-.home-icon {
-  margin-right: 35px;
-}
+
 /*
 nav {
   position:fixed;
@@ -32,6 +27,7 @@ nav {
 section {
   margin-top: 140px;
 }
+
 .nav-links {
   display: flex;
   vertical-align: text-top;
@@ -44,8 +40,8 @@ section {
   font-size: 1.25rem;
   color: brown;
 }
-.nav-link {
 
+.nav-link {
   background: linear-gradient(to right, rgb(243, 112, 112), rgb(243, 112, 112) 50%, brown 50%);
   overflow: hidden;
   background-clip: text;
@@ -60,19 +56,24 @@ section {
   background-position: 0 100%;
 
 }
+.home-icon {
+  align-items: center;
+  position: relative;
+  top:170px;
 
+}
 #main-title {
-  display: inline;
   margin:0px;
   color:white;
-  position: ;
+  text-align: center;
 }
+
 #title {
   text-decoration: none;
   font-family: 'Lato', sans-serif;
   font-size: 3.3rem;
-  display: inline;
   margin:0px;
+  
 }
 
 #sub-title {

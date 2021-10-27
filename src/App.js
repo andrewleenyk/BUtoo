@@ -37,17 +37,6 @@ function App() {
   return (
     <div>
       <nav>
-        <div className="home-icon">
-
-          <Link to="/" className="title" exact>
-            <div id="main-title">
-              <h1 id="title">#BUtoo</h1>
-            
-            <h5 id="sub-title">Sexual assault happens at Boston University. <br/> Let's make our community safer.</h5>
-            </div>
-          </Link>
-
-        </div>
         <div className="nav-links">
 
           <Link to="/why">
@@ -68,10 +57,17 @@ function App() {
           <Link to="/sign-the-petition">
             <a className="nav-link">Sign the Petition</a>
           </Link>
-
         </div>
-
+        <div className="home-icon">
+          <Link to="/" className="title" exact>
+            <div id="main-title">
+              <h1 id="title">#BUtoo</h1>
+              <h5 id="subtitle">Sexual assault happens at Boston University. <br/> Let's make our community safer.</h5>
+            </div>
+          </Link>
+        </div>
       </nav>
+      
 
       <section>
         <article className="home-responses-container" alt="hello">
