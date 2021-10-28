@@ -16,7 +16,8 @@ const Home = ({responses}) => {
     return (
         <div id="home-container">
             <div className="metoo-info">
-                <h1>Stories Shared: {stories}</h1>
+                <h1 id="stories-shared">Stories Shared</h1>
+                <h2 id="number-stories">{stories}</h2>
                 <button className="metoo-btn" onClick={() => setMeToo(metoo + 1)}>
                 #MeToo: {metoo}
                 </button>

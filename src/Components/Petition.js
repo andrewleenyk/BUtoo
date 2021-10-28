@@ -12,6 +12,7 @@ const Petition = () => {
 
     const [toggleFetch,setToggleFetch] = useState(true)
     const [signatures, setSignatures] = useState([]);
+    const [signed, setSigned] = useState(false);
     
 
     useEffect(() => {
@@ -43,12 +44,13 @@ const Petition = () => {
 
         await axios.post(API_URL, newSign)
         setToggleFetch(!toggleFetch)
+        setSigned(!signed)
     }
     return (
         <div>
         <iframe src="https://giphy.com/embed/y6aGq7e5NnPr96E0ap" width="480" height="168" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+            {signed ? <h1>thank you</h1> : 
             <form onSubmit={handleSubmit}>
-                
                 <TextField type="text" id="input-signature" multiline
                 label="Name"
                 onChange={(ev) => setSignature(ev.target.value)} />
@@ -56,7 +58,7 @@ const Petition = () => {
                 <Button variant="outlined" type="submit">
                 Submit
                 </Button>
-            </form>
+            </form>}
             <article className="petition-signatures">
                 {signatures.map((signature) => (
                 <a className="each-signature">{signature.fields.signature}</a>
