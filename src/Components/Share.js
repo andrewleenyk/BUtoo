@@ -78,7 +78,7 @@ const Share = ({toggleFetch, setToggleFetch}) => {
                 rows={12} onChange={(ev) => setStory(ev.target.value)} />
                 </FormControl>
             </div>
-                <Button variant="outlined" type="submit">
+                <Button variant="outlined" id="submit-share" type="submit">
                 Submit
                 </Button>
             </form>}

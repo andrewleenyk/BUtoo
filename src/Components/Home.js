@@ -12,12 +12,11 @@ const Home = ({responses}) => {
 
 
     return (
-        <div>
+        <div id="home-container">
             <div className="metoo-info">
                 <h1>Stories Shared: {stories}</h1>
-                <h3>Me too: {metoo}</h3>
-                <button onClick={() => setMeToo(metoo + 1)}>
-                Me too: {metoo}
+                <button className="metoo-btn"onClick={() => setMeToo(metoo + 1)}>
+                #MeToo: {metoo}
                 </button>
             </div>
             <div className="responses-div">

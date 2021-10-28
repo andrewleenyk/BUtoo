@@ -68,8 +68,7 @@ function App() {
       </nav>
       
 
-      <section>
-        <article className="home-responses-container" alt="hello">
+      <section className="app-section">
         <Route path="/" exact>
           <Home 
             responses={responses}
@@ -99,8 +98,6 @@ function App() {
         <Route path="/sign-the-petition">
           <Petition />
         </Route>        
-        
-        </article>
       </section>
 
     </div>

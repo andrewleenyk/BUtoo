@@ -49,7 +49,6 @@ a:hover { text-shadow: 0 0 5px #ffeeee; }
   right: 0;
 
   width: 300px;
-
 }
 
 .title {
@@ -58,11 +57,12 @@ a:hover { text-shadow: 0 0 5px #ffeeee; }
 }
 
 #title {
-  font-size: 4.5rem;
+  font-size: 5rem;
   margin: 0;
 }
 #subtitle {
   margin:10px 0 0 0;
+  font-size: .95rem;
 }
 .home-icon {
   align-self: center;
@@ -70,9 +70,9 @@ a:hover { text-shadow: 0 0 5px #ffeeee; }
 section{
   display: flex;
   justify-content: space-between;
+  position: absolute;
+  align-content: center;
 }
-
-
 
 .responses-div {
   margin: 40px 30px 0px 40px;
@@ -92,10 +92,30 @@ section{
   width: 300px;
   display: block;
 }
+#home-container {
 
+  display: flex;
+  align-content: center;
+  vertical-align: text-top;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Lato', sans-serif;
+}
 .form-container {
   display:block;
   width: 700px;
+}
+h1 {
+  text-align: center;
+  display: block;
+}
+
+button {
+  display: block;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 #story-form {
@@ -119,4 +139,12 @@ section{
 
 #story-box {
   width: 400px;
+}
+
+.form-container {
+  margin-top: 40px;
+}
+
+#submit-share {
+  margin-left: 15px;
 }
