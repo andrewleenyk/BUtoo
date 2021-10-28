@@ -23,6 +23,7 @@ const Petition = () => {
         }
 
         getSignatures();
+        console.log(signatures)
 
     },[toggleFetch])
 

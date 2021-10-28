@@ -4,12 +4,14 @@ import axios from "axios";
 
 import TextField from '@mui/material/TextField';
 import Button from '@mui/material/Button';
-
 import InputLabel from '@mui/material/InputLabel';
 import MenuItem from '@mui/material/MenuItem';
 import FormControl from '@mui/material/FormControl';
 import Select from '@mui/material/Select';
 
+import * as React from 'react';
+import { createTheme, ThemeProvider } from '@mui/material/styles';
+import { purple } from '@mui/material/colors';
 
 const Share = ({toggleFetch, setToggleFetch}) => {
     const API_KEY = 'keyN5KW3EITtcAGls'
@@ -50,6 +52,21 @@ const Share = ({toggleFetch, setToggleFetch}) => {
         setToggleFetch(!toggleFetch)
         setSubmit(!submit);
     }
+    const theme = createTheme({
+        palette: {
+            primary: {
+            // Purple and green play nicely together.
+            main: '#11cb5f',
+            },
+            secondary: {
+            // This is green.A700 as hex.
+            main: '#d32f2f',
+            },
+        },
+        });
+        
+
+
     return (
         <div>
             {submit ?
@@ -78,9 +95,12 @@ const Share = ({toggleFetch, setToggleFetch}) => {
                 rows={12} onChange={(ev) => setStory(ev.target.value)} />
                 </FormControl>
             </div>
-                <Button variant="outlined" id="submit-share" type="submit">
-                Submit
-                </Button>
+
+                <ThemeProvider theme={theme}>
+                    <Button color="secondary" variant="outlined" id="submit-share" type="submit">
+                    Submit
+                    </Button>
+                </ThemeProvider>
             </form>}
         </div>
 
