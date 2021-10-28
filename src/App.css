@@ -146,10 +146,16 @@ button {
 }
 
 #submit-share {
-  
+
   margin: 0 0 15px 15px;
 }
 
 .each-signature {
   color: black;
+  margin: 10px 10px 10px 0px;
+  white-space: nowrap;
+}
+
+.petition-signatures {
+  display: flex;
 }

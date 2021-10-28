@@ -57,9 +57,11 @@ const Petition = () => {
                 Submit
                 </Button>
             </form>
-        {signatures.map((signature) => (
-            <a className="each-signature">{signature.fields.signature}</a>
-        ))}
+            <article className="petition-signatures">
+                {signatures.map((signature) => (
+                <a className="each-signature">{signature.fields.signature}</a>
+            ))}
+            </article>
 
         </div>
     )

@@ -56,10 +56,6 @@ const Share = ({toggleFetch, setToggleFetch}) => {
         palette: {
             primary: {
             // Purple and green play nicely together.
-            main: '#11cb5f',
-            },
-            secondary: {
-            // This is green.A700 as hex.
             main: '#d32f2f',
             },
         },
@@ -97,7 +93,7 @@ const Share = ({toggleFetch, setToggleFetch}) => {
             </div>
 
                 <ThemeProvider theme={theme}>
-                    <Button color="secondary" variant="outlined" id="submit-share" type="submit">
+                    <Button variant="outlined" id="submit-share" type="submit">
                     Submit
                     </Button>
                 </ThemeProvider>
