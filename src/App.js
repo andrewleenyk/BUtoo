@@ -38,7 +38,7 @@ function App() {
   return (
     <div>
       <nav>
-      <label for="toggle">&#9776;</label>
+      <label id="hamburger" for="toggle">&#9776;</label>
       <input type="checkbox" id="toggle"/>
         <div className="nav-links">
           <Link to="/why">
