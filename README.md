@@ -23,6 +23,9 @@ PMVP:
 - Image dynamically appearing in homepage before stories
 - Making it optional to be sign the petition anonymously or not
 - having an apporoval attribute in each story response to await manual approval
+- Added Material UI styling
+- Adding number of storied shared on homepage
+- Adding me too button on homepage
 
 
 Project Schedule: 
