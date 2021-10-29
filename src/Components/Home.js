@@ -4,12 +4,13 @@ import { Component } from 'react'
 
 const Home = ({responses}) => {
     const [stories, setStories] = useState(0);
-    const [metoo, setMeToo] = useState(0)
+    const [metoo, setMeToo] = useState(43)
 
     //connect new airtable
     
     useEffect(() => {
         setStories(responses.length)
+
     },[])
 
 

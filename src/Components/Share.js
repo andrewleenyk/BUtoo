@@ -66,7 +66,7 @@ const Share = ({toggleFetch, setToggleFetch}) => {
     return (
         <div>
             {submit ?
-            <h1>thank you</h1> :
+            <h1>Your story means a lot to this community. We are truly sorry for this experience. We will look over your story to ensure it follows our guidelines for safety and anonymity. This is for you and others safety. </h1> :
             <form onSubmit={handleSubmit} id="story-form">
             <div className="form-container">
                 <FormControl id="input-grade">

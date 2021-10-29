@@ -2,7 +2,7 @@
 const Prevention = () => {
 
     return (
-        <h7>Prevention</h7>
+        <h1>Prevention</h1>
     )
 }
 export default Prevention;
