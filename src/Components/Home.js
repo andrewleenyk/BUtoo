@@ -10,9 +10,7 @@ const Home = ({responses}) => {
     
     useEffect(() => {
         setStories(responses.length)
-
     },[])
-
 
     return (
         <div id="home-container">

@@ -6,7 +6,7 @@ nav {
   background-position-x: center;
   background-position-y:bottom;
   background-size: cover;
-  height:500px;
+  height:400px;
 }
 
 a {
@@ -28,7 +28,7 @@ a:hover { text-shadow: 0 0 5px #ffeeee; }
 
 .nav-link {
   margin: 0 1.5vw 0 1.5vw;
-  font-size: 1.5rem;
+  font-size:1.3rem;
   background-size: 200% 100%;
   background-position: 100%;
   transition: background-position 275ms ease;
@@ -41,7 +41,7 @@ a:hover { text-shadow: 0 0 5px #ffeeee; }
 .home-icon {
   display: flex;
   justify-content: center;
-  top:28vh;
+  top:24vh;
   position: absolute;
   margin-left: auto;
   margin-right: auto;
