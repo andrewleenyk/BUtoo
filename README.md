@@ -1,6 +1,8 @@
 # Title: BUtoo
 
-Still in progress. Deployment deadline by the November 2021.
+Still in progress. Official deployment deadline by the November 2021.
+
+link: https://frosty-mclean-856a02.netlify.app/
 
 A place for students at Boston University to share their sexual assault stories anonymously
 

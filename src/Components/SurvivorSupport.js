@@ -5,7 +5,7 @@ const SurvivorSupport = () => {
 
         <div className="ss-div">
             <h1>Survivor Support</h1>
-            <iframe src="https://giphy.com/embed/jiH6cmHs9WuOAz8wke" width="300" height="480" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+            <iframe src="https://giphy.com/embed/jiH6cmHs9WuOAz8wke" width="300" height="480" frameBorder="0" className="giphy-embed" allowFullScreen></iframe>
             <div className="resource-box">
                 <span className="link-container">
                     <a target="_blank" id="links" href="https://www.rainn.org/">RAINN:<br/> </a>
