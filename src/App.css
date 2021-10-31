@@ -1,12 +1,12 @@
 nav {
   display:block;
   justify-content: space-between;
-  background-image: url("BU-too.jpg");
+  background-image: url("Depositphotos_197334306_L.jpg");
   background-repeat: no-repeat;
   background-position-x: center;
   background-position-y:bottom;
   background-size: cover;
-  height:400px;
+  height:500px;
 }
 
 a {
@@ -41,13 +41,12 @@ a:hover { text-shadow: 0 0 5px #ffeeee; }
 .home-icon {
   display: flex;
   justify-content: center;
-  top:170px;
+  top:28vh;
   position: absolute;
   margin-left: auto;
   margin-right: auto;
   left: 0;
   right: 0;
-
   width: 300px;
 }
 
@@ -57,7 +56,7 @@ a:hover { text-shadow: 0 0 5px #ffeeee; }
 }
 
 #title {
-  font-size: 5rem;
+  font-size: 6.5rem;
   margin: 0;
 }
 #subtitle {
