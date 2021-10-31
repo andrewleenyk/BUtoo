@@ -1,10 +1,10 @@
-# Title: BUSpeaks
+# Title: BUtoo
 
-A place for people to discuss sexual assault stories anonymously
+Still in progress. Deployment deadline by the November 2021.
 
-BUAnonymous/BU Speaks
+A place for students at Boston University to share their sexual assault stories anonymously
 
-Description: This website will be a place to voice your story of sexual assault at BU anonymously. The home page will display the stories with the date of each response shown below. There will be a nav bar with a header to write a story, sign a petition, learn about why the website exists, prevention, and recovery resources. There is also a resource page on every page if support/help is needed.
+Description: This website will be a place to voice your story of sexual assault at BU anonymously. The home page will display the stories with the date of each response shown below. There will be a nav bar with a header to write a story, sign a petition, learn about the mission statement, prevention, and recovery resources.
 
 Whimsical: https://whimsical.com/bu-speaks-9uYCcaZcmZWv9bAtkgHVYb
 
@@ -23,6 +23,9 @@ PMVP:
 - Image dynamically appearing in homepage before stories
 - Making it optional to be sign the petition anonymously or not
 - having an apporoval attribute in each story response to await manual approval
+- Added Material UI styling
+- Adding number of storied shared on homepage
+- Adding me too button on homepage
 
 
 Project Schedule: 
