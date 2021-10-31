@@ -21,14 +21,14 @@ a:hover { text-shadow: 0 0 5px #ffeeee; }
   display: flex;
   float: right;
   vertical-align: text-top;
-  margin-right: 50px;
+  margin-right: 60px;
   font-family: 'Lato', sans-serif;
-  margin-top: 20px;
+  margin-top: 25px;
 }
 
 .nav-link {
   margin: 0 1.5vw 0 1.5vw;
-  font-size: 1.25rem;
+  font-size: 1.5rem;
   background-size: 200% 100%;
   background-position: 100%;
   transition: background-position 275ms ease;
