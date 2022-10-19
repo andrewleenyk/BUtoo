@@ -1,8 +1,4 @@
-# Title: BUtoo
-
-Still in progress. Official deployment deadline by the November 2021.
-
-link: https://frosty-mclean-856a02.netlify.app/
+# [BUtoo](https://frosty-mclean-856a02.netlify.app/)
 
 A place for students at Boston University to share their sexual assault stories anonymously
 
@@ -12,14 +8,16 @@ Whimsical: https://whimsical.com/bu-speaks-9uYCcaZcmZWv9bAtkgHVYb
 
 API: I will be using AirTable to save all the responses/stories and the date they were created/submitted. I will also use air table to record all the names that sign the petition.
 
-MVP: 
+MVP:
+
 - Have all 6 components.
-- Being able to render all responses in the home page 
+- Being able to render all responses in the home page
 - Submit form in the Share link
 - Sign the petition and render all signees
 
-PMVP: 
-- Form in survivor support or prevention for people to submit their own advice/support 
+PMVP:
+
+- Form in survivor support or prevention for people to submit their own advice/support
 - Working video in page discussing the issue
 - Display a graph of number of responses/signed petitions
 - Image dynamically appearing in homepage before stories
@@ -29,8 +27,8 @@ PMVP:
 - Adding number of storied shared on homepage
 - Adding me too button on homepage
 
+Project Schedule:
 
-Project Schedule: 
 - Friday: Have proposal finished, repo and react app created.
 - Weekend: Homepage, Share components, and air table created.
 - Monday: functional home page and story page.
@@ -38,12 +36,13 @@ Project Schedule:
 - Wednesday: All components/links created and functional.
 
 Timeframes:
+
 - Have a working homepage that renders the stories and link to submit stories by Tuesday.
 - Having the petition page done by Wednesday.
 - The rest of the MVP finished and styles on Thursday at noon.
 
-
 SWOT Analysis:
+
 - Strengths: Handling data, axis api calls
 - Weaknesses: rendering the data, and Route/Links
 - Opportunities: Creating an aesthetic website that also has user input functionality.
